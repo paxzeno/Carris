@@ -14,5 +14,17 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.mars.crater.carris</groupId>
+            <artifactId>carris-interaction</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-web-api</artifactId>
+        </dependency>
+    </dependencies>
+
 
 </project>
