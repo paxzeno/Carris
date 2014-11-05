@@ -1,6 +1,8 @@
 package com.mars_crater.carris.webapp.services.servlet;
 
 import com.mars_crater.carris.interaction.services.MobileSiteRequest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,13 +14,14 @@ import java.io.IOException;
 /**
  * Home servlet used for calculating the bus timers from home's nearest bus stop.
  */
-@WebServlet("/home")
-public class HomeServlet extends HttpServlet {
+@WebServlet(value="/test")
+public class TestServlet extends HttpServlet {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(TestServlet.class);
 
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        MobileSiteRequest request = new MobileSiteRequest();
-        request.execute();
+        LOGGER.debug("TEST SERVLET BEING RUN!");
     }
 
     @Override
