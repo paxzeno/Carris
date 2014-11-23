@@ -1,0 +1,29 @@
+@media(max-device-width: 320px) {
+    body {
+        background-color: #000000;
+    }
+	
+	div.main {
+	    width: 100%;
+        /*padding: 2%;*/
+	}
+	
+	div.large-square {
+        display: inline-block;
+		width: 45%;
+		background-color: #1975FF;
+        margin: 2%;
+	}
+}
+
+@media (min-device-width: 321px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    div.large-square {
+        display: inline-block;
+        width: 160px;
+        background-color: #1975FF;
+    }
+}

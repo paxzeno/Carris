@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Carris Project</name>
+    <name>carris</name>
     <url>www.mars-crater.com</url>
 
     <build>

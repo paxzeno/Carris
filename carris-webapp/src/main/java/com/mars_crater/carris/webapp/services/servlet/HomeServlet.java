@@ -19,6 +19,7 @@ public class HomeServlet extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         MobileSiteRequest request = new MobileSiteRequest();
         request.execute();
+        resp.sendRedirect("/carris/web/success.html");
     }
 
     @Override
